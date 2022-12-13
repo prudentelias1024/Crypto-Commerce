@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.app__name {
+    font-family: Mulish;
+}
+.nav__link {
+    font-family: Mulish;
+}
+.app__title{
+    font-family: Mulish;
+line-height: 1.5em;
+}
+.app__subtitle{
+    /* font-family: Ink Free; */
+    font-family: Gabriola;
+}
+.benefits__heading{
+    font-family:Gabriola;
+}
+.benefits__icon{
+    margin-left: 2.5em;
+    color: #512bd4;
+}
+.benefit__text{
+font-family: Mulish;
+font-weight: 700;
+}
+.product__image {
+    height: 25%;
+   object-fit: fill;
+}
+.product__name {
+    font-family: Gabriola;
+}
+.product, .form__border {
+    border: 1px solid #dfdfdf;
+    border-radius: 1em;
+}
+.product__seller{
+    font-family: Mulish;
+}
+.input
+{
+       border:1px solid #ccc !important;
+       padding: 1em !important;
+}
+.buy
+{
+       border:1px solid #ccc !important;
+       padding: 1em !important;
+       background-color:   #512bd4;
+       color: #fff;
+      width: 90%;
+      border-radius: 99em;
+      font-family: Mulish;
+      font-weight: 600;
+}
+
+.search__input {
+    border:2px solid #ccc !important;
+}
+.search__input[type="text"]{
+    padding-left: 3em;
+}
+.profile__image{
+    border-radius: 99em;
+}
+.thumbnail {
+    font-family: Mulish;
+    color: grey;
+    font-weight: 700;
+    font-size: large;
+}
+.add__icon{
+    font-size: 1.5em;
+    margin-left: 3em;
+}
+.product__box{
+    font-size: 1.5em;
+}
+.add__product{
+    position: relative;
+    width: 100%;
+    left: 200%;
+}
+.info{
+    font-family: Mulish;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+ /* .benefit, 
+ .app__details, */
+ .product
+  {
+    opacity: 0;
+    transition: all 1s;
+     transform: translateX(-100%);    
+     filter: blur(8px);
+} 
+/*.hero__image {
+    opacity: 0;
+    transition: all 1s;
+     transform: translateX(100%);    
+     filter: blur(8px);
+} */
+.show{
+ opacity: 1;
+ filter: blur(0);
+ transform: translateX(0)
+}
+body{
+    overflow-x: hidden;
+}
+
